@@ -18,6 +18,18 @@ export const metadata: Metadata = {
 	title: "AdvertisingAgency.com",
 	description:
 		"Need better ads? We create 10 world-class static ad creatives every day for your brand, so you can focus on what really matters—scaling.",
+
+	twitter: {
+		title: "AdvertisingAgency.com",
+		description:
+			"Need better ads? We create 10 world-class static ad creatives every day for your brand, so you can focus on what really matters—scaling.",
+		images: [
+			{
+				url: "https://res.cloudinary.com/mamsheikh/image/upload/v1742066110/twitter-image_nhwfz0.png",
+				alt: "AdvertisingAgency.com",
+			},
+		],
+	},
 };
 
 export default function RootLayout({
