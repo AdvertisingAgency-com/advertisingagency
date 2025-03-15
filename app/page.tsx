@@ -1,4 +1,3 @@
-import { AdaptiveTooltip } from "@/components/adaptive-tooltip";
 import { AdCarousel } from "@/components/home/AdCarousel";
 import { Button } from "@/components/ui/button";
 import { client } from "@/sanity/lib/client";
@@ -33,81 +32,54 @@ export default async function Page() {
 
 				<main className="mx-auto space-y-8">
 					<div className=" space-y-2 px-4 sm:px-16">
-						<p>
-							We're{" "}
-							<span className="cursor-pointer text-blue-600">
-								AdvertisingAgency.com
-							</span>
-							—crazy domain, right? We're that serious.
-						</p>
+						<p>Need static ads like these for your brand?</p>
 
-						<p>
-							People see hundreds, if not thousands, of ads per day—we create
-							the few they remember.
-						</p>
+						<p>Congratulations, you're in the right place!</p>
 
-						<p>
-							We partner with companies like yours to deliver high-performing
-							static ad creatives, on autopilot.
-						</p>
+						<p>People see hundreds, if not thousands, of ads per day.</p>
 
-						<div className="flex flex-wrap items-center gap-2">
-							<p>We've created ads for</p>
-							<div className="flex gap-2">
-								{IMAGES.map((image) => (
-									<Image
-										src={image.src}
-										alt="Logo"
-										className="size-6 rounded-full object-cover"
-										width={80}
-										height={80}
-										key={image.id}
-									/>
-								))}
+						<div className="space-y-2 pb-4">
+							<p>We create the few they remember.</p>
+							<p>
+								We partner with companies like yours to deliver static ad
+								creatives that perform.
+							</p>
+							<div className="flex flex-wrap items-center gap-2">
+								<p>We've created ads for</p>
+								<div className="flex gap-2">
+									{IMAGES.map((image) => (
+										<Image
+											src={image.src}
+											alt="Logo"
+											className="size-6 rounded-full object-cover"
+											width={80}
+											height={80}
+											key={image.id}
+										/>
+									))}
+								</div>
+								<p>and many more.</p>
 							</div>
-							<p>and many many more.</p>
-						</div>
-
-						<div className="space-y-2">
-							<p>Clients keep saying the same thing about our ads: "WOW!"</p>
-							<p>
-								We didn't reinvent the wheel—just the way you get your ad
-								creatives.
-							</p>
-							<p>Simple and scalable—one subscription, endless ads.</p>
-							<p>No meetings. No back-and-forth. Just ads that work.</p>
+							<p>We make it simple:</p>
+							<p>One subscription, $2,250/mo.</p>
+							<p>30 unique static ads delivered every week.</p>
+							<p>That's 120 ads per month, or 1680 per year.</p>
 							<p>You focus on scaling. We handle the creatives.</p>
-							<p>
-								We've proven "if it sounds too good to be true, it probably is"
-								wrong.
-							</p>
-							<p>
-								Every day, you get 10 world-class, tailor-made ad creatives for
-								your brand—100% yours.
-							</p>
-							<p>
-								That’s 3,650 ads per year. What do we charge? Way too
-								little—$5,995 per month.
-							</p>
-							<p>Why pay per ad when you can get unlimited?</p>
-							<p>Cancel or pause subscription anytime—no questions asked.</p>
-							<p>You should try us out—most don't look back.</p>
-							<p>
-								Not loving it after a week? Get $3,000 back—low risk, high
-								reward.
-							</p>
+							<p>No meetings.</p>
+							<p>No more back-and-forth than necessary.</p>
+							<p>Just ads that work.</p>
 						</div>
 
-						<p className="pb-4">
-							Above you can find ads and{" "}
-							<AdaptiveTooltip
-								title="concepts"
-								description="These are example concepts created by us for illustrative purposes
+						{/* <p className="pb-4">
+              Above you can find ads and{" "}
+              <AdaptiveTooltip
+                title="concepts"
+                description="These are example concepts created by us for illustrative purposes
 						and are not official campaigns or partnerships with these brands.
 						The ads marked with “(Concept ad)” in the slider above are
 						conceptual examples."
-							/>
-							{/* <TooltipProvider>
+              />
+              {/* <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <button className="text-blue-600">concepts </button>
@@ -121,21 +93,21 @@ export default async function Page() {
                     </p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>*/}{" "}
-							we've created for a couple of your favorite brands. Are you next?
-						</p>
+              </TooltipProvider>" "}
+              we've created for a couple of your favorite brands. Are you next?
+            {/* </p> */}
 
 						<div className="flex items-center gap-4">
 							<Button className="rounded-full bg-black text-[16px] text-white hover:bg-gray-800">
 								<Link
-									href="https://buy.stripe.com/aEUfZj7fke4Sfw44gz"
+									href="https://buy.stripe.com/7sIdRbarw3qees06oI"
 									target="_blank"
 									rel="norefferer"
 								>
 									Join Today
 								</Link>
 							</Button>
-							<Button variant="outline" className="rounded-full text-[16px]">
+							{/* <Button variant="outline" className="rounded-full text-[16px]">
 								<Link
 									href="https://cal.com/advertisingagency/15min"
 									target="_blank"
@@ -143,7 +115,7 @@ export default async function Page() {
 								>
 									Book a Call
 								</Link>
-							</Button>
+							</Button> */}
 							<span className="hidden items-center gap-2 text-gray-600 text-sm md:flex">
 								<span className="h-2 w-2 animate-blink rounded-full bg-yellow-400" />
 								Only 3 spots available right now
