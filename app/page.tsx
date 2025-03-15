@@ -38,7 +38,7 @@ export default async function Page() {
 
 						<p>People see hundreds, if not thousands, of ads per day.</p>
 
-						<div className="space-y-2">
+						<div className="space-y-2 pb-4">
 							<p>We create the few they remember.</p>
 							<p>
 								We partner with companies like yours to deliver static ad
